@@ -1,0 +1,266 @@
+body
+{
+    font-family:"Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Montserrat", sans-serif;
+}
+:root
+{
+    --color1:#FFFFFF;
+    --color2:#000000;
+    --color3:#F7F7F7;
+}
+.main-nav .navbar .nav-item
+{
+    position: relative;
+    margin-inline: .5rem;
+    overflow: hidden;
+  
+}
+
+.main-nav .navbar .nav-item::after
+{
+    content: '';
+    width: 80%;
+    height: 3px;
+    background-color: var(--color1);
+    position: absolute;
+    bottom: 0%;
+    left:-100%;
+    transition: all 1s;
+}
+.main-nav .navbar .nav-item:hover::after
+{
+    content: '';
+    width: 80%;
+    height: 3px;
+    background-color: var(--color1);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.main-nav .navbar .nav-item .nav-link.active::after
+{
+    content: '';
+    width: 80%;
+    height: 3px;
+    background-color: var(--color1);
+    position: absolute;
+    bottom: 0%;
+    left:0%;
+}
+.home
+{
+background: url(../images/imgs/bg.jpg);
+background-position: center;
+background-size: cover;
+min-height: 100vh;
+position: relative;
+}
+.home .layer
+{
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    color: var(--color1);
+    display: grid;
+    place-content: center;
+    
+}
+
+.home .layer .animation 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .icons .icon
+{
+    cursor: pointer;
+}
+
+
+
+.animation .typing::after
+{
+content: '';
+font-weight:400;
+font-size:60px; 
+animation: typed 5s infinite alternate;
+transition: all .3s;
+}
+
+
+
+
+
+@keyframes typed {
+    35%
+    {
+        content: 'DEVOLOPER|' ;
+    }
+    70%
+    {
+        content:' DESIGNER|' ;
+    }
+    100%
+    {
+        content: 'LARRY DANIALS|' ;
+    }
+    70%
+    {
+        content: 'DEVOLOPER|' ;
+    }
+    35%
+    {
+        content:' DESIGNER| ';
+    }
+    0%
+    {
+        content: 'LARRY DANIALS|' ;
+    }
+}
+
+
+
+.animation .f1
+{
+
+font-weight:200;
+font-size:60px;
+
+}
+
+
+
+.about .img::after
+{
+    content: '';
+    background-image:url(../images/imgs/dots.png) ;
+    background-repeat: repeat;
+    z-index: -1;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+   
+}
+.about h3
+{
+    color: var(--color2);
+    
+}
+.about p.space
+{
+    letter-spacing: 3px;
+}
+.progress
+{
+    height: 30px;
+}
+.progress-bar
+{
+    background-color: var(--color2) !important;
+}
+.about button a
+{
+    color:var(--color1);
+    text-decoration: none;
+}
+.btn-one
+{
+background-color: var(--color2);
+ transition: all .3s;
+}
+.btn-one:hover
+{
+    background-color: var(--color1);
+    border: var(--color2) 1px solid;
+}
+.btn-one:hover a
+{
+    color: var(--color2);
+}
+
+.btn-two
+{
+    border: var(--color2) 1px solid;
+    transition: all 1s;
+    
+}
+.btn-two a
+{
+    color: var(--color2) !important;
+}
+.btn-two:hover
+{
+    background-color: var(--color2);
+}
+.btn-two:hover a
+{
+    color: var(--color1) !important;
+}
+#services{
+    background-color: var(--color3);
+}
+.icon 
+{
+
+    cursor: pointer;
+    background-color: var(--color3);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.services-content
+{
+    background-color: var(--color1);
+    transition: all 1s;
+}
+.icon:hover
+{
+    background-color: var(--color2);
+
+}
+.icon:hover i
+{
+   color: var(--color1);
+}
+h3{
+    position: relative;
+    z-index: 2;
+}
+.works
+{
+    
+    background-image: url(../images/imgs/dots.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.linkk
+{
+    cursor: pointer;
+    position: relative;
+}
+.links .linkk::after
+{
+  content: '';
+  width: 80%;
+  height: 3px;
+  color: aqua;
+  position: absolute;
+  top: 0%;
+  left: 30px;
+}
